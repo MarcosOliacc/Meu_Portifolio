@@ -6,11 +6,24 @@
     margin: auto;
     padding: 50px 0px;
 }
-.img { 
-    background-image: radial-gradient(transparent, #060c0f 90%), url('/Hexagon.svg');
+.img1 { 
+    background-image: radial-gradient(transparent, #060c0f 75%), url('/Hexagon.svg');
     width: 800px;
     height: 500px;
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    top: 40%;
+    transform: translateY(-50%);
 }
-.zind {
-    z-index: 0;
+.img2 { 
+    background-image: radial-gradient(transparent, #060c0f 75%), url('/stack.svg');
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
 }
+

@@ -2,17 +2,15 @@ import Image from "next/image";
 import styles from '@/styles/home.module.scss'
 import { Open_Sans } from "next/font/google";
 import { Welcome } from "@/components/common/welcome";
+import { VisitCart } from "@/components/visitCart";
 
 export default function Home() {
   return (<>
     <main className={styles.main}>
       <Welcome/>
-      <h1 className={styles.area1} >
-        
-        <p className=''>Texto que vai aparecer reveal</p>
-        <p>Texto que vai aparecer reveal</p>
-        <p>Texto que vai aparecer reveal</p>
-        </h1>
+      <div className={styles.img1}></div>
+      <div className={styles.img2}></div>
+      <VisitCart/>
     </main>
   </>)
 }

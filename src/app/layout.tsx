@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
+
 import "@/styles/globals.scss";
 
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bem Vindo! | Portifólio de Marcos.",

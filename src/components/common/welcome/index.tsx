@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 import { useState, useEffect } from "react"
 import { Courier_Prime } from "next/font/google"
@@ -17,7 +18,7 @@ export function Welcome() {
             if(!arr.length) {
                 const typer2:any = setInterval(()=> {
                     setText(state=>state.split('').slice(0,-1).join(''))
-                    setTimeout(()=>{setText(state=>state + '_')},100)
+                    setTimeout(()=>{setText(state=>state + '_')},200)
                     
                 },800)
                 return clearInterval(typer)
@@ -30,7 +31,7 @@ export function Welcome() {
             setText((state)=>state + next)
             
             
-        },200)
+        },100)
     },[])
     return <>
         <p style={{fontSize:'2.2rem'}} className={josefin.className}>{text}</p>

@@ -10,3 +10,28 @@ import { motion, useInView, useAnimation } from "framer-motion";
           duration: 0.3, delay:0.2
         }}
       
+
+
+      useEffect(()=> {
+        const arr = digits.split('').reverse()
+
+        const typer:any = setInterval(()=> {
+            
+            if(!arr.length) {
+                const typer2:any = setInterval(()=> {
+                    setText(state=>state.split('').slice(0,-1).join(''))
+                    setTimeout(()=>{setText(state=>state + '_')},200)
+                    
+                },800)
+                return clearInterval(typer)
+                
+            }
+            if(text[text.length - 1]=== '_') {
+                setText((state)=>state.split('').slice(0,-1).join(''))
+            }
+            const next = arr.pop() + '_'
+            setText((state)=>state + next)
+            
+            
+        },200)
+    },[])
