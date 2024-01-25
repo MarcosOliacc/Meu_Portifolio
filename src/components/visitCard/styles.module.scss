@@ -3,7 +3,11 @@
 .conteiner {
     height: 100%;
     display: flex;
+    justify-content: space-between;
     margin: 10vh 0;
+}
+.cardContent {
+    display: flex;
 }
 .imgContent {
     display: flex;
@@ -50,6 +54,27 @@
         &:hover {
             .arrows {
                 rotate: 45deg;
+            }
+        }
+    }
+}
+.navPageContent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 10px;
+    position: relative;
+    .acessBtn {
+        width: 300px;
+        .arrows {
+            position: absolute;
+            right: 15%;
+            margin-bottom: -7px;
+            rotate: 90deg;
+        }
+        &:hover {
+            .arrows {
+                rotate: 140deg;
             }
         }
     }

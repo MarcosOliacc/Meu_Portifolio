@@ -7,6 +7,7 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body {
     background-color: $richblack;
@@ -23,16 +24,31 @@ h2, h3 {
     font-size: 2.5rem;
     color: $white;
 }
+a {
+    text-decoration: none;
+    color: $bluestone;
+}
 button {
     font-size: 2rem;
     color: $white;
-    background-color: transparent;
-    border: 1px solid $sweetred;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.459);
+    border: 1px solid $seagreen;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: 300ms;
     &:hover {
-        box-shadow: 3px 3px 3px $sweetred;
+        box-shadow: 3px 3px 3px $seagreen;
     }
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: $richblack;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #455d69;
+    border-radius: 40px;
+  }
