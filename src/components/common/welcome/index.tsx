@@ -2,6 +2,7 @@
 'use client'
 import { useState, useEffect } from "react"
 import { Courier_Prime } from "next/font/google"
+import styles from '../../visitCard/styles.module.scss'
 const josefin = Courier_Prime({
     weight:'400',
     subsets: ['latin']
@@ -34,6 +35,9 @@ export function Welcome() {
         },100)
     },[])
     return <>
-        <p style={{fontSize:'2.2rem'}} className={josefin.className}>{text}</p>
+    <div  style={{width:'400px'}}>
+        <p className={`${josefin.className} ${styles.welcome}`}>{text}</p>
+    </div>
+        
     </>
 }

@@ -31,3 +31,39 @@
     height: 2000px;
 }
 
+@media (max-width: 1620px) {
+    .img2 {
+        display: none;
+    }
+    .img1 {
+        left: 30%;
+    }
+}
+@media (max-width: 1220px) {
+    .main {
+        width: 90%;
+    }
+    .img1 {
+        width: 600px;
+        height: 450px;
+    }
+}
+@media (max-width: 900px) {
+    .img1 {
+        background-image: radial-gradient(transparent, #060c0f 70%), url('/polygon.svg');
+        width: 700px;
+        height: 400px;
+        left: 35%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+@media (max-width: 550px) {
+    .img1 {
+        background-position: right;
+        width: 300px;
+        height: 400px;
+        left: 50%;
+        top: 70%;
+    }
+}

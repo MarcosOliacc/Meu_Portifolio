@@ -1,0 +1,40 @@
+@import '@/styles/variables.module.scss';
+
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navPageContent {
+    display: none;
+    gap: 10px;
+    margin-top: -10px;
+    
+    .acessBtn {
+        position: relative;
+        width: 150px;
+        font-size: 1.4rem;
+        padding: 5px 15px 5px 0px;
+        .arrows {
+            position: absolute;
+            right: 5%;
+            rotate: 90deg;
+            transition: 200ms;
+        }
+        &:hover {
+            .arrows {
+                rotate: 140deg;
+            }
+        }
+    }
+}
+@media (max-width: 1620px) {
+    .navPageContent {
+        display: flex;
+    }
+}
+@media (max-width: 1220px) {
+    .navPageContent {
+        display: none;
+    }
+}

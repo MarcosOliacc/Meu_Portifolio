@@ -1,0 +1,101 @@
+@import '@/styles/variables.module.scss';
+.conteiner {
+    display: none;
+    position: relative;
+}
+.acessContent {
+    position: absolute;
+    right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: center;
+    background-color: $richblack;
+    border: 2px solid $bluestone;
+    border-radius: 10px 0px 10px 10px;
+    width: 300px;
+    height: 300px;
+}
+.barsContent {
+    background-color: $richblack;
+    justify-content: space-between;
+    width: 60px;
+    height: 60px;
+    border: 1px solid $seagreen;
+    border-radius: 10px;
+    padding: 12px 10px;
+    position: relative;
+    transition: 400ms;
+    .bars {
+        width: 40px;
+        height: 6px;
+        border-radius: 5px;
+        background-color: $white;
+        position: absolute;
+        transition: 400ms;
+    }
+    
+}
+.closed {
+    .bar1 {
+        top: 10px;
+        left: 10px;
+    }
+    .bar2 {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .bar3 {
+        bottom: 10px;
+        left: 10px;
+    }
+}
+.hidden {
+    display: none;
+}
+.opened {
+    .bar1 {
+        top: 50%;
+        transform: translateY(-20%);
+        rotate: 45deg;
+    }
+    .bar2{
+        display: none;
+    }
+    .bar3 {
+        top: 50%;
+        transform: translateY(-20%);
+        rotate: -45deg;
+    }
+}
+.acessBtn {
+    position: relative;
+    width: 250px;
+    .arrows {
+        position: absolute;
+        right: 10%;
+        rotate: 90deg;
+        transition: 200ms;
+    }
+    &:hover {
+        .arrows {
+            rotate: 140deg;
+        }
+    }
+}
+
+
+
+@media (max-width: 1220px) {
+    .conteiner {
+        display: flex;
+
+    }
+}
+@media (max-width: 550px) {
+    .acessContent {
+        right: 0px;
+        top: 70px;
+    }
+}
