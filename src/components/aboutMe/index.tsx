@@ -5,6 +5,8 @@ import styles from './styles.module.scss'
 export function AboutMe() {
     return <>
         <div className={styles.conteiner}>
+            <div className={styles.bg1}></div>
+            <div className={styles.bg2}></div>
             <ImpactSection/>
             <ProfileSect/>
         </div>

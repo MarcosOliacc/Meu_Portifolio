@@ -17,18 +17,45 @@ export function ProfileSect() {
         if(isInView) {
             mainControls.start('visible')
             let res1 = 0
-            const res2 = 50
-            const res3 = 20
-            const res4 = 70
-            const typer:any = setInterval(()=> {
-                if(res1 >= 80) {
-                    clearInterval(typer)
+            let res2 = 0
+            let res3 = 0
+            let res4 = 0
+            let typer1:any = setInterval(()=> {
+                if(res1 >= 84) {
+                    clearInterval(typer1)
                 }     
                 else {
                     res1++
-                    setTimeout(()=>{setBar1(state=>state += 1)},600)
+                    setTimeout(()=>{setBar1(state=>state += 1)},700)
                 }      
-            },20)
+            },10)
+            const typer2:any = setInterval(()=> {
+                if(res2 >= 56) {
+                    clearInterval(typer2)
+                }     
+                else {
+                    res2++
+                    setTimeout(()=>{setBar2(state=>state += 1)},700)
+                }      
+            },15)
+            const typer3:any = setInterval(()=> {
+                if(res3 >= 23) {
+                    clearInterval(typer3)
+                }     
+                else {
+                    res3++
+                    setTimeout(()=>{setBar3(state=>state += 1)},700)
+                }      
+            },25)
+            const typer4:any = setInterval(()=> {
+                if(res4 >= 78) {
+                    clearInterval(typer4)
+                }     
+                else {
+                    res4++
+                    setTimeout(()=>{setBar4(state=>state += 1)},700)
+                }      
+            },10)
             
         }
     },[isInView])
@@ -41,15 +68,46 @@ export function ProfileSect() {
                 <div className={styles.tecnologies3}></div>
             </div>
             <div className={styles.aboutContent}>
-                <div className={styles.cards}>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident sequi voluptate et facilis nobis ex error in! Unde, sint perspiciatis corporis itaque aperiam reiciendis, repudiandae adipisci expedita consectetur quos praesentium!</p>
-                </div>
-                <div className={styles.cards}>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident sequi voluptate et facilis nobis ex error in! Unde, sint perspiciatis corporis itaque aperiam reiciendis, repudiandae adipisci expedita consectetur quos praesentium!</p>
-                </div>
-                <div className={styles.cards}>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident sequi voluptate et facilis nobis ex error in! Unde, sint perspiciatis corporis itaque aperiam reiciendis, repudiandae adipisci expedita consectetur quos praesentium!</p>
-                </div>
+                <motion.div
+                variants={{
+                    hidden:{opacity: 0, x: 250},
+                    visible: {opacity: 1, x:0}
+                    }}
+                    initial= 'hidden'
+                    animate= {mainControls}
+                    transition={{
+                        duration: 1, delay:0.5,ease:'easeInOut'
+                    }}
+                className={styles.cards}>
+                    <p>Olá, eu sou o Marcos, estudante de Tecnologia e freelancer. Venho me empenhando nessa carreira desde janeiro de 2023, com o objetivo de ser um futuro profissional na area da programação.</p>
+                </motion.div>
+                <motion.div
+                variants={{
+                    hidden:{opacity: 0, x: 250},
+                    visible: {opacity: 1, x:0}
+                    }}
+                    initial= 'hidden'
+                    animate= {mainControls}
+                    transition={{
+                        duration: 1, delay:0.7,ease:'easeInOut'
+                    }}
+                className={styles.cards}>
+                    <p>Durante meus estudos, consisti meu foco em torno da linguagem Javascript, onde me sustentei em diversos cursos. Com base nisso, estou a cada dia mais aperfeiçoando minhas habilidades tecnicas e sociais.</p>
+                </motion.div>
+                <motion.div
+                variants={{
+                    hidden:{opacity: 0, x: 250},
+                    visible: {opacity: 1, x:0}
+                    }}
+                    initial= 'hidden'
+                    animate= {mainControls}
+                    transition={{
+                        duration: 1, delay:0.9,ease:'easeInOut'
+                    }}
+                className={styles.card3}>
+                    <h3>Resumo de Tecnologias</h3>
+                    <p> - Typescript - JavaScript - React - Html - Sass/css - Nextjs - PostgresSQL - Sequelize - Express - Nodejs - Axios</p>
+                </motion.div>
             </div>
             <div className={styles.analytcsContent}>
                 <h2>Tecnologias / Projetos feitos</h2>
@@ -57,76 +115,36 @@ export function ProfileSect() {
                     <h2>JavaScript</h2>
                     <div className={styles.barConteiner}>
                         <div className={styles.barContent}>
-                            <motion.div
-                            variants={{
-                                hidden:{x: -250},
-                                visible: {x:-40}
-                                }}
-                                initial= 'hidden'
-                                animate= {mainControls}
-                                transition={{
-                                    duration: 2, delay:0.3
-                                }}
-                            className={styles.bar}></motion.div>
+                            <div style={{width:`${bar1}%`}} className={styles.bar}></div>
                         </div>
                         <p className={styles.porcents}>{bar1}%</p>
                     </div>
                 </div>
                 <div className={styles.graph}>
-                    <h2>JavaScript</h2>
+                    <h2>React/Nextjs</h2>
                     <div className={styles.barConteiner}>
                         <div className={styles.barContent}>
-                            <motion.div
-                            variants={{
-                                hidden:{x: -250},
-                                visible: {x:-40}
-                                }}
-                                initial= 'hidden'
-                                animate= {mainControls}
-                                transition={{
-                                    duration: 2, delay:0.3
-                                }}
-                            className={styles.bar}></motion.div>
+                            <div style={{width:`${bar2}%`}} className={styles.bar}></div>
                         </div>
-                        <p className={styles.porcents}>{bar1}%</p>
+                        <p className={styles.porcents}>{bar2}%</p>
                     </div>
                 </div>
                 <div className={styles.graph}>
-                    <h2>JavaScript</h2>
+                    <h2>Postgres</h2>
                     <div className={styles.barConteiner}>
                         <div className={styles.barContent}>
-                            <motion.div
-                            variants={{
-                                hidden:{x: -250},
-                                visible: {x:-40}
-                                }}
-                                initial= 'hidden'
-                                animate= {mainControls}
-                                transition={{
-                                    duration: 2, delay:0.3
-                                }}
-                            className={styles.bar}></motion.div>
+                            <div style={{width:`${bar3}%`}} className={styles.bar}></div>
                         </div>
-                        <p className={styles.porcents}>{bar1}%</p>
+                        <p className={styles.porcents}>{bar3}%</p>
                     </div>
                 </div>
                 <div className={styles.graph}>
-                    <h2>JavaScript</h2>
+                    <h2>HTML/SCSS</h2>
                     <div className={styles.barConteiner}>
                         <div className={styles.barContent}>
-                            <motion.div
-                            variants={{
-                                hidden:{x: -250},
-                                visible: {x:-40}
-                                }}
-                                initial= 'hidden'
-                                animate= {mainControls}
-                                transition={{
-                                    duration: 2, delay:0.3
-                                }}
-                            className={styles.bar}></motion.div>
+                            <div style={{width:`${bar4}%`}} className={styles.bar}></div>
                         </div>
-                        <p className={styles.porcents}>{bar1}%</p>
+                        <p className={styles.porcents}>{bar4}%</p>
                     </div>
                 </div>
             </div>

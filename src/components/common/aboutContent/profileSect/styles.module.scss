@@ -2,25 +2,27 @@
 
 .conteiner {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    margin-top: 20px;
+    grid-template-columns: .5fr 2.5fr 1fr;
+    margin-top: 50px;
 }
-.tenosContent {
+.tecnosContent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 .tecnologies1 {
     background: url('/reactIcon.svg') no-repeat;
     background-size: cover;
-    width: 172px;
-    height: 172px;
+    width: 162px;
+    height: 162px;
 }
 .tecnologies2 {
     background: url('/tsIcon.svg') no-repeat;
     background-size: cover;
-    width: 122px;
-    height: 122px;
+    width: 100px;
+    height: 100px;
 }
 .tecnologies3 {
     background: url('/nextjsIcon.svg') no-repeat;
@@ -32,23 +34,43 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 700px;
+    gap: 20px;
+    align-items: center;
     .cards {
-        background-color: #00b8ac23;
-        
-        
+        background-color: #005f5959;
+        max-width: 700px;
+        padding: 20px;
+        border-radius: 0px 30px 0px 30px;
+        p {
+           font-size: 1.8rem; 
+           text-shadow: 3px 3px 5px black;
+           text-align: justify;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+    }
+    .card3 {
+        @extend .cards;
+        text-align: center;
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
     }
 }
+
 .analytcsContent {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 .graph {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     h2 {
-        color: red;
         margin: auto;
     }
 }
@@ -75,7 +97,6 @@
     .bar {
         background-color: $bluestone;
         height: 100%;
-        width: 100%;
         border-radius: 5px;
     }
 }
