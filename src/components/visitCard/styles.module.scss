@@ -67,6 +67,11 @@
     position: relative;
     .acessBtn {
         width: 300px;
+        display: flex;
+        a {
+            width: 300px;
+            padding: 10px 20px;
+        }
         .arrows {
             position: absolute;
             right: 15%;
@@ -101,6 +106,9 @@
         align-items: center;
         gap: 30px;
     }
+    .conteiner {
+        margin-top: 10px;
+    }
 }
 @media (max-width: 710px) {
     .descripContent {
@@ -126,6 +134,7 @@
             }
         }
     }
+    
 }
 @media (max-width: 550px) {
     .descripContent {

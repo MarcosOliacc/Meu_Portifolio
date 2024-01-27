@@ -8,7 +8,7 @@ export function Header() {
             <Welcome/>
             <nav className={styles.navPageContent}>
                 <button className={styles.acessBtn}>
-                    <a href="#">
+                    <a href="#aboutMe">
                         Sobre mim
                     <Image src='/arrowsLink.png' alt='' width={19} height={19} className={styles.arrows}/>
                     </a>

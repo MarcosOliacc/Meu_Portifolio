@@ -19,7 +19,7 @@ export function Welcome() {
             if(!arr.length) {
                 const typer2:any = setInterval(()=> {
                     setText(state=>state.split('').slice(0,-1).join(''))
-                    setTimeout(()=>{setText(state=>state + '_')},200)
+                    setTimeout(()=>{setText(state=>state + '_')},100)
                     
                 },800)
                 return clearInterval(typer)

@@ -72,6 +72,13 @@
 .acessBtn {
     position: relative;
     width: 250px;
+    color: $white;
+    display: flex;
+    a {
+        width: 250px;
+        padding: 5px 0px;
+        color: $white;
+    }
     .arrows {
         position: absolute;
         right: 10%;

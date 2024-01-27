@@ -23,28 +23,28 @@ export function NavBurguer() {
     return <>
         <div className={styles.conteiner}>
             <div ref={ref1} className={`${styles.acessContent} ${menuClass}`}>
-            <button className={styles.acessBtn}>
-                    <a href="#">
+                <button className={styles.acessBtn}>
+                    <a href="#aboutMe">
                         Sobre mim
-                    <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/>
+                    <Image src='/arrowsWLink.png' alt='' width={25} height={25} className={styles.arrows}/>
                     </a>
                 </button>
                 <button className={styles.acessBtn}>
                     <a href="#">
                         Meus Projetos
-                    <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/>
+                    <Image src='/arrowsWLink.png' alt='' width={25} height={25} className={styles.arrows}/>
                     </a>
                 </button>
                 <button className={styles.acessBtn}>
                     <a href="#">
                         Carreira
-                    <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/>
+                    <Image src='/arrowsWLink.png' alt='' width={25} height={25} className={styles.arrows}/>
                     </a>
                 </button>
                 <button className={styles.acessBtn}>
                     <a href="#">
                         Contato
-                    <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/>
+                    <Image src='/arrowsWLink.png' alt='' width={25} height={25} className={styles.arrows}/>
                     </a>
                 </button>
             </div>

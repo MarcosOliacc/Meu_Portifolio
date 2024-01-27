@@ -8,13 +8,17 @@
 .navPageContent {
     display: none;
     gap: 10px;
-    margin-top: -10px;
     
     .acessBtn {
         position: relative;
         width: 150px;
+        display: flex;
         font-size: 1.4rem;
-        padding: 5px 15px 5px 0px;
+        
+        a {
+            width: 300px;
+            padding: 5px 15px 5px 0px;
+        }
         .arrows {
             position: absolute;
             right: 5%;

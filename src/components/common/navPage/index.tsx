@@ -16,7 +16,7 @@ export function NavPage() {
                 duration: 0.3, delay: 0.5
             }}
         className={styles.acessBtn}>
-            <a href="#">Sobre mim <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/></a>
+            <a href="#aboutMe">Sobre mim <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/></a>
         </motion.button>
         <motion.button
         variants={{
