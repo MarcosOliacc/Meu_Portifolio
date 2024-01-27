@@ -9,7 +9,7 @@
     height: 100vh;
 }
 .img1 { 
-    background-image: radial-gradient(transparent, #060c0f 75%), url('/Hexagon.svg');
+    background-image: radial-gradient(transparent, #060c0f 75%), url('/backgrounds/Hexagon.svg');
     width: 800px;
     height: 500px;
     position: absolute;
@@ -19,7 +19,7 @@
     transform: translateY(-50%);
 }
 .img2 { 
-    background-image: radial-gradient(transparent, #060c0f 70%), url('/polygon.svg');
+    background-image: radial-gradient(transparent, #060c0f 70%), url('/backgrounds/polygon.svg');
     width: 700px;
     height: 500px;
     position: absolute;
@@ -52,7 +52,7 @@
 }
 @media (max-width: 900px) {
     .img1 {
-        background-image: radial-gradient(transparent, #060c0f 70%), url('/polygon.svg');
+        background-image: radial-gradient(transparent, #060c0f 70%), url('/backgrounds/polygon.svg');
         width: 700px;
         height: 400px;
         left: 35%;

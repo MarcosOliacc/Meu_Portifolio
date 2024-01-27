@@ -1,4 +1,15 @@
+@import '@/styles/variables.module.scss';
 
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 20px;
+}
+.tenosContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .tecnologies1 {
     background: url('/reactIcon.svg') no-repeat;
     background-size: cover;
@@ -16,4 +27,55 @@
     background-size: cover;
     width: 142px;
     height: 142px;
+}
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 700px;
+    .cards {
+        background-color: #00b8ac23;
+        
+        
+    }
+}
+.analytcsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.graph {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        color: red;
+        margin: auto;
+    }
+}
+.barConteiner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+    border: 1px solid gray;
+    height: 30px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px 10px;
+
+}
+.barContent {
+    background-color: rgba(128, 128, 128, 0.425);
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    .bar {
+        background-color: $bluestone;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
 }
