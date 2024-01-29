@@ -15,7 +15,7 @@ export function ImpactSection() {
     },[isInView])
 
     return <>
-        <div ref={ref} className={styles.titleContent}>
+        <div className={styles.titleContent}>
             <div className={styles.soundContent}></div>
             <motion.div
             variants={{
@@ -39,8 +39,9 @@ export function ImpactSection() {
                 transition={{
                     duration: 0.5, delay:0.5
                 }}
-            className={styles.impactText}>Estarás pronto para agarrar um sonho aquele que não desistir de resolver um  <span>&#34;Uncaught Exception: Error&#34;</span> pelo caminho</motion.h1>
+            className={styles.impactText}>Estarás pronto para agarrar um sonho aquele que não desistir de resolver um  <span >&#34;Uncaught Exception: Error&#34;</span> pelo caminho</motion.h1>
         </div>
+        <div ref={ref}></div>
 
     </>
 }
