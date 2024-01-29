@@ -2,7 +2,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect,useState } from 'react';
-import { useMediaQuery } from "react-responsive";
 import styles from './styles.module.scss'
 
 export function ProfileSect() {
