@@ -47,12 +47,66 @@
 }
 .impactText {
     text-align: center;
-    width: 100%;
     max-width: 1300px;
     text-shadow: 3px 3px 5px $richblack;
     z-index: 3;
     margin-top: -130px;
     span {
         color: $sweetred;
+    }
+}
+@media (max-width: 1600px) {
+    .bg1 {
+        width: 600px;
+        height: 400px;
+    }
+    .bg2 {
+        width: 400px;
+        height: 350px;
+        right: 10%;
+    }
+}
+@media (max-width: 1400px) {
+    .impactText {
+        margin-top: -120px;
+        font-size: 3rem;
+    }
+    .soundContent, .soundBg,.titleContent {
+        height: 150px;
+        background-position: center;
+    }
+}
+@media (max-width: 1100px) {
+    .bg1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-60%);
+    }
+    .bg2 {
+        left: 50%;
+        top: 10%;
+        transform: translateX(-60%);
+    }
+}
+@media (max-width: 760px) {
+    .impactText {
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 510px) {
+    .impactText {
+        font-size: 2rem;
+    }
+    .bg1 {
+        background-position: right;
+        width: 300px;
+        height: 400px;
+    }
+    .bg2 {
+        background-position: center;
+        width: 300px;
+        height: 300px;
+        right: 10%;
     }
 }

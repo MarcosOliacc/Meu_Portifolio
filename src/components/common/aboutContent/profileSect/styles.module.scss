@@ -3,6 +3,7 @@
 .conteiner {
     display: grid;
     grid-template-columns: .5fr 2.5fr 1fr;
+    gap: 80px;
     margin-top: 50px;
 }
 .tecnosContent {
@@ -11,12 +12,14 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+   
 }
 .tecnologies1 {
     background: url('/reactIcon.svg') no-repeat;
     background-size: cover;
-    width: 162px;
-    height: 162px;
+    margin-top: -10px;
+    width: 142px;
+    height: 142px;
 }
 .tecnologies2 {
     background: url('/tsIcon.svg') no-repeat;
@@ -60,12 +63,18 @@
     }
 }
 
-.analytcsContent {
+.analytcsConteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap: 10px;
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
 }
+
 .graph {
     display: flex;
     flex-direction: column;
@@ -98,5 +107,80 @@
         background-color: $bluestone;
         height: 100%;
         border-radius: 5px;
+    }
+}
+@media (max-width:1400px) {
+    .tecnosContent {
+        grid-area: tecnos;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .aboutContent {
+        grid-area: about;
+        
+    }
+    .analytcsConteiner {
+        h1 {
+            font-size: 2.3rem;
+        }
+    }
+    .analytcsContent {
+        grid-area: analyt;
+    }
+    .conteiner {
+        margin-top: 10px;
+        gap: 20px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr .5fr;
+        grid-template-areas: 
+            "about analyt"
+            "tecnos tecnos"
+        ;
+    }
+    .graph {
+        gap: 20px;
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+@media (max-width:1100px) {
+    .conteiner {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr .5fr;
+        grid-template-areas: 
+            "about"
+            "analyt"
+            "tecnos"
+        ;
+    }
+    .analytcsContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:650px) {
+    .analytcsContent {
+        grid-template-columns: 1fr;
+    }
+    .tecnologies1 {
+        margin-top: -10px;
+        width: 100px;
+        height: 100px;
+    }
+    .tecnologies2 {
+        width: 70px;
+        height: 70px;
+    }
+    .tecnologies3 {
+        width: 112px;
+        height: 112px;
+    }
+    .aboutContent {
+        .cards {
+            p {
+                font-size: 1.5rem;
+            }
+        }
     }
 }

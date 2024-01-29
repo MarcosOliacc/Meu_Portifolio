@@ -109,8 +109,9 @@ export function ProfileSect() {
                     <p> - Typescript - JavaScript - React - Html - Sass/css - Nextjs - PostgresSQL - Sequelize - Express - Nodejs - Axios</p>
                 </motion.div>
             </div>
-            <div className={styles.analytcsContent}>
-                <h2>Tecnologias / Projetos feitos</h2>
+            <div className={styles.analytcsConteiner}>
+                <h1>Tecnologias / Projetos feitos:</h1>
+                <div className={styles.analytcsContent}>
                 <div className={styles.graph}>
                     <h2>JavaScript</h2>
                     <div className={styles.barConteiner}>
@@ -146,6 +147,7 @@ export function ProfileSect() {
                         </div>
                         <p className={styles.porcents}>{bar4}%</p>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
