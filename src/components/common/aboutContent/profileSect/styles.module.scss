@@ -2,6 +2,7 @@
 
 .conteiner {
     display: grid;
+    overflow: hidden;
     grid-template-columns: .5fr 2.5fr 1fr;
     gap: 80px;
     margin-top: 50px;

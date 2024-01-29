@@ -2,6 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect,useState } from 'react';
+import { useMediaQuery } from "react-responsive";
 import styles from './styles.module.scss'
 
 export function ProfileSect() {
@@ -15,7 +16,6 @@ export function ProfileSect() {
 
     useEffect(()=> {
         if(isInView) {
-            mainControls.start('visible')
             let res1 = 0
             let res2 = 0
             let res3 = 0
@@ -57,6 +57,9 @@ export function ProfileSect() {
                 }      
             },10)
             
+        }
+        if (isInView) {
+            mainControls.start('visible')
         }
     },[isInView])
 
