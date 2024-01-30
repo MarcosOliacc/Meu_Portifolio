@@ -2,3 +2,12 @@ Se alguns dependeram de sorte, eu estou lutando para programar minha
 
 
 Estarás pronto para agarrar um sonho aquele que não desistir de resolver um "Uncaught Exception: Error" pelo caminho
+variants={{
+                    hidden:{opacity: 0, x: 100},
+                    visible: {opacity: 1, x:0}
+                    }}
+                    initial= 'hidden'
+                    animate= {mainControls}
+                    transition={{
+                        duration: 1, delay:0.8,ease:'easeOut'
+                    }}

@@ -9,7 +9,7 @@ export function ImpactSection() {
     const mainControls = useAnimation()
 
     useEffect(()=> {
-        if(isInView) {
+        if(isInView) { 
             mainControls.start('visible')
         }
     },[isInView])

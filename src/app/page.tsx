@@ -4,6 +4,7 @@ import { Open_Sans } from "next/font/google";
 import { Header } from "@/components/common/header";
 import { VisitCart } from "@/components/visitCard";
 import { AboutMe } from "@/components/aboutMe";
+import { Projects } from "@/components/projects/projectSection";
 
 export default function Home() {
   return (<>
@@ -16,6 +17,9 @@ export default function Home() {
       </section>
       <section id="aboutMe" className={styles.section}>
           <AboutMe/>
+      </section>
+      <section id="projects" className={styles.section}>
+        <Projects/>
       </section>
     </main>
   </>)
