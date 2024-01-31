@@ -3,7 +3,7 @@ const ProjectArray = [
     {
         id: 1,
         name:'OneBitFlix',
-        description: ['Projeto acadêmico feito através da plataforma Onebitcode, resultado final do treinamento FullStack e meu maior projeto até hoje.','Com esse projeto desenvolvi minhas habilidades tecnicas em Typescript e aprendi na prática como funciona e como desenvolver um BackEnd com o Postgres e Sequelize, além de expandir e facilitar meu aprendizado futuro com outras tecnologias da area.'],
+        description: ['Projeto acadêmico feito através da plataforma Onebitcode, resultado final do treinamento FullStack e meu maior projeto até hoje.','Com esse projeto desenvolvi minhas habilidades tecnicas em Typescript e aprendi na prática como funciona e como desenvolver um BackEnd com o Postgres e Sequelize, além de expandir e facilitar meu aprendizado futuro com outras tecnologias da area.','Nessa aplicação é possivel:','- Criar uma conta e fazer login através de um sistema de token de segurança;','- Assistir um curso de onde parou, curtir e adicionar a sua lista;', '- Atualizar dados do usuário, como nome, email, senha, telefone, etc;','- No BackEnd é possível adicioar um curso e adicionar e enviar videos como episódios para o servidor;', '- Entre outras...'],
         tecnos: [
             {
                 name: 'Typescript',
@@ -22,7 +22,7 @@ const ProjectArray = [
                 percent: 50
             }
         ],
-        responsiveGalery: ['/onebitG', '/onebitM', '/onebitP'],
+        responsiveGalery: ['/onebitG.png', '/onebitM.png', '/onebitP.png'],
         galery: ['onebit01','onebit02','onebit03','onebit04'],
         bg:'onebitBG.png'
     },
