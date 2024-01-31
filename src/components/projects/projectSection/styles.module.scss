@@ -1,3 +1,57 @@
 .conteiner {
     position: relative;
+    height: 100%;
+}
+.projectConteiner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    position: relative;
+}
+.projectInfosContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1 {
+        margin-bottom: 30px;
+        font-size: 3.3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+}
+.projDescrip {
+    max-width: 800px;
+    padding: 30px;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 10px;
+    p {
+        font-size: 2rem;
+        text-align: justify;
+    }
+}
+.tecnosContent {
+    display: flex;
+}
+.tecnos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 20px 0px 0px;
+    p {
+        font-size: 1.5rem;
+        color: #b1b1b1;
+    }
+}
+.projectBackground {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%,-20%);
 }

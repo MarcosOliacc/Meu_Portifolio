@@ -102,6 +102,9 @@
     }
 }
 @media (max-width:660px) {
+    .headerContent {
+        margin-bottom: 40px;
+    }
     .circuitContent, .circuitOver {
         max-width: 450px;
         height: 100px;
@@ -114,6 +117,11 @@
         height: 220px;
         h1 {
             font-size: 2rem;
+        }
+    }
+    .navContent {
+        button {
+            font-size: 1.8rem;
         }
     }
 }
@@ -130,5 +138,10 @@
         h1 {
             font-size: 1.8rem;
         }
+    }
+}
+@media (max-width:470px) {
+    .headerContent {
+        margin-bottom: 100px;
     }
 }

@@ -5,6 +5,8 @@ import { Header } from "@/components/common/header";
 import { VisitCart } from "@/components/visitCard";
 import { AboutMe } from "@/components/aboutMe";
 import { Projects } from "@/components/projects/projectSection";
+import { ProjectProvider } from "@/context/ProjectContext";
+import { ProjectContent } from "@/components/projects/projectContent";
 
 export default function Home() {
   return (<>
@@ -19,7 +21,7 @@ export default function Home() {
           <AboutMe/>
       </section>
       <section id="projects" className={styles.section}>
-        <Projects/>
+        <ProjectContent/>
       </section>
     </main>
   </>)
