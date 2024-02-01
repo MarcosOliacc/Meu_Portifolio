@@ -22,14 +22,14 @@ const ProjectArray = [
                 percent: 50
             }
         ],
-        responsiveGalery: ['/onebitG.png', '/onebitM.png', '/onebitP.png'],
+        responsiveGalery: ['/onebitG.jpg', '/onebitM.jpg', '/onebitP.jpg'],
         galery: ['onebit01','onebit02','onebit03','onebit04'],
-        bg:'onebitBG.png'
+        bg:'onebitBG.jpg'
     },
     {
         id: 2,
         name:'Range Rover',
-        description:['Projeto acadêmico feito através da plataforma Onebitcode, resultado final do treinamento FullStack e meu maior projeto até hoje.','Com esse projeto desenvolvi minhas habilidades tecnicas em Typescript e aprendi na prática como funciona e como desenvolver um BackEnd com o Postgres e Sequelize, além de expandir e facilitar meu aprendizado futuro com outras tecnologias da area.'],
+        description:['Site espelho da Range Rover, um projeto pessoal que desenvolvi no inicio do meu aprendizado. Com ele desenvolvi minhas habilidades em CSS e suas aplicações de fex-box, grid e entre outras, oque possibilitou expandir minha visão sobre como um site foi construido.','Nessa aplicação, realizei conseitos de navegação dinâmina, ação sobre eventos e responsividade.'],
         tecnos: [
             {
                 name: 'Html',
@@ -45,14 +45,14 @@ const ProjectArray = [
             },
 
         ],
-        responsiveGalery: ['/rangeG', '/rangeM', '/rangeP'],
+        responsiveGalery: ['/rangeG.jpg', '/rangeM.jpg', '/rangeP.jpg'],
         galery: ['range01','range02','range03','range04'],
-        bg:'rangeBG'
+        bg:'rangeBG.jpg'
     },
     {
         id: 3,
         name:'Fresco Pizzaria',
-        description:['Projeto acadêmico feito através da plataforma Onebitcode, resultado final do treinamento FullStack e meu maior projeto até hoje.','Com esse projeto desenvolvi minhas habilidades tecnicas em Typescript e aprendi na prática como funciona e como desenvolver um BackEnd com o Postgres e Sequelize, além de expandir e facilitar meu aprendizado futuro com outras tecnologias da area.'],
+        description:['Site de uma pizzaria, projeto realizado durante o curso de Wordpress do Curso em Video, apesar de wordpress não fazer parte da grade de um programador de fato, julguei importante pela quantidade de requisições do mercado em abrir um site ou um ecommerce com Wordpress, então decidi desenvolver um pouco nisso também.','Com isso, consegui desenvolver uma boa base sobre como criar um site com Wordpress, oque facilitará meu aprendizado para a criação de um ecommerce futuramente.','Nessa aplicação, realizei conseitos de SEO sobre alcance do site pras pessoas com indexação do Google, proteção do site contra ataques, responsividade, automoção de formulario de contato, entre outros.'],
         tecnos: [
             {
                 name: 'WordPress',
@@ -63,31 +63,31 @@ const ProjectArray = [
                 percent: 100
             }
         ],
-        responsiveGalery: ['/frescoG', '/frescoM', '/frescoP'],
+        responsiveGalery: ['/frescoG.jpg', '/frescoM.jpg', '/frescoP.jpg'],
         galery: ['fresco01','fresco02','fresco03','fresco04'],
-        bg:'frescoBG'
+        bg:'frescoBG.jpg'
     },
     {
         id: 4,
-        name:'Banco Digital',
-        description:['Projeto acadêmico feito através da plataforma Onebitcode, resultado final do treinamento FullStack e meu maior projeto até hoje.','Com esse projeto desenvolvi minhas habilidades tecnicas em Typescript e aprendi na prática como funciona e como desenvolver um BackEnd com o Postgres e Sequelize, além de expandir e facilitar meu aprendizado futuro com outras tecnologias da area.'],
+        name:'Portifólio de Marcos',
+        description:['Projeto pessoal, feito com o intuito de me apresentar e demonstrar minhas habilidades para os interessados, muito importante para que um programador seja reconhecido e possivelmente desejado em suas oportunidades.','Aqui, resolvi mostrar, de um jeito simples e direto, um pouco dobre mim, sinta-se a vontade para explorar e me chamar para uma entrevista :b'],
         tecnos: [
             {
-                name: 'Html',
-                percent: 70
+                name: 'Typescript',
+                percent: 80
             },
             {
-                name:'CSS',
-                percent: 60
+                name:'NextJs',
+                percent: 90
             },
             {
                 name:'Javascript',
-                percent:90
+                percent:20
             }
         ],
-        responsiveGalery: ['/bancoG', '/bancoM', '/bancoP'],
-        galery: ['banco01','banco02','banco03','banco04'],
-        bg:'bancoBG'
+        responsiveGalery: ['/portiG.jpg', '/portiM.jpg', '/portiP.jpg'],
+        galery: ['porti01','porti02','porti03','porti04'],
+        bg:'Hexagon.svg'
     },
 
 ]

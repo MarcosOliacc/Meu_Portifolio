@@ -28,13 +28,14 @@
 .projDescrip {
     max-width: 800px;
     padding: 30px;
-    min-height: 400px;
+    height: min-content;
     background-color: rgba(255, 255, 255, 0.452);
     border-radius: 10px;
     p {
         font-size: 2rem;
+        font-weight: 500;
         text-align: justify;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.144);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
         color: black;
     }
 }
@@ -133,4 +134,12 @@
     width: 230px;
     padding: 5px 10px;
     margin-right: 10%;
+}
+.galeryConteiner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
 }

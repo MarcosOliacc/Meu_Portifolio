@@ -95,7 +95,7 @@ export function Header() {
                         duration: 1, delay:1,ease:'easeOut'
                     }}
                     onClick={()=>{setProject(ProjectArray.find(ele=>ele.id === 4))}}
-                    >Banco Digital</motion.button>
+                    >Meu Portifólio</motion.button>
                     <motion.p
                     variants={{
                     hidden:{opacity: 0, x: 100},
