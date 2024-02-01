@@ -6,6 +6,7 @@ export interface Project {
     name:string,
     description: string[],
     tecnos:{
+        id:number
         name:string,
         percent:number
     }[],

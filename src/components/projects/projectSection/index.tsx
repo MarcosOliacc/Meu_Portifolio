@@ -32,8 +32,8 @@ export function Projects() {
 
                     <h3>Tencologias do Projeto:</h3>
                     <div className={styles.tecnosContent}>
-                        {currProject?.tecnos? currProject?.tecnos.map((tecno, index)=><>
-                            <div key={index} className={styles.tecnos}>
+                        {currProject?.tecnos? currProject?.tecnos.map((tecno)=><>
+                            <div key={tecno.id} className={styles.tecnos}>
                                 <div className={tecno.name}></div>
                                 <p>{tecno.name}</p>
                                 <p>{tecno.percent}%</p>
