@@ -55,6 +55,7 @@
 .projectBackground {
     width: 800px;
     height: 500px;
+    filter: blur(1px);
     position: absolute;
     border-radius: 20px;
     z-index: -8;
@@ -149,4 +150,72 @@
     height: 100%;
     z-index: 6;
     background-color: rgba(0, 0, 0, 0.315);
+}
+@media (max-width: 1500px) {
+    .telaP {
+        top: 50%;
+        left: 25%;
+    }
+    .backP {
+        top: 50%;
+        left: 25%;
+
+    }
+}
+@media (max-width: 1220px) {
+    .projectConteiner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        position: relative;
+    }
+    .projectInfosContent {
+        align-items: center;
+        height: fit-content;
+    }
+    .projectBackground {
+        filter: blur(2px);
+    }
+    .responsiveScreensContent {
+        height: 250px;width: 100%;
+    }
+    .projectImgsContent {
+        margin-top: 50px;
+        height: 300px;
+    }
+    .telaG {
+        top: 30%;
+        left: 50%;
+    }
+    .backG {
+        top: 30%;
+        left: 50%;
+    }
+    .telaM {
+        top: 60%;
+        left: 90%;
+
+    }
+    .backM {
+        top: 60%;
+        left: 90%;
+
+    }
+    .telaP {
+        top: 60%;
+        left: -20%;
+    }
+    .backP {
+        top: 60%;
+        left: -20%;
+
+    }
+}
+@media (max-width: 680px) {
+    .projectBackground {
+
+        width: 100%;
+
+    }
 }

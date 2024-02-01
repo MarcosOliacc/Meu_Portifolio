@@ -5,13 +5,37 @@
     height: 700px;
     border-radius: 20px;
     z-index: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.imgConteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 .img {
     width: 800px;
     height: 480px;
+}
+.btn2, .btn1 {
+    border: none;
+    height: 200px;
+    padding: 5px;
+    &:hover {
+        box-shadow: none;
+    }
+}
+.arrow {
+    filter: invert(100%);
+    width: 50px;
+    height: 50px;
 }

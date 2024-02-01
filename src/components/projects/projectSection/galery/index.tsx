@@ -27,7 +27,14 @@ export function Galery(num:prop) {
         <div className={styles.conteiner}>
             <h1>{project?.name}</h1>
             <div className={styles.imgConteiner}>
-                <button className={styles.Btn1} onClick={prevPic}></button>
+                <button className={styles.btn1} onClick={prevPic}>
+                    <Image alt='' 
+                    src={`/arrowLeft.svg`}
+                    width={50}
+                    height={50}
+                    className={styles.arrow}
+                    />
+                </button>
 
                 <Image alt='' 
                 src={`/galery/${project?.galery[Number(pict[1]) - 1]}`}
@@ -37,7 +44,14 @@ export function Galery(num:prop) {
                 />
                 
 
-                <button className={styles.Btn2} onClick={nextPic}></button>
+                <button className={styles.btn2} onClick={nextPic}>
+                    <Image alt='' 
+                    src={`/arrowRight.svg`}
+                    width={50}
+                    height={50}
+                    className={styles.arrow}
+                    />
+                </button>
             </div>
         </div>
     </>
