@@ -82,7 +82,6 @@ export function Projects() {
             </div>
             {galery !== 0?
             <div className={styles.galeryConteiner}>
-                <p>aaa</p>
                 <div className={styles.galeryClose} onClick={()=>setGalery(0)}></div>
                 <Galery num={galery}/>
             </div> 

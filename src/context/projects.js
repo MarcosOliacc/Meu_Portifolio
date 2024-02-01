@@ -27,7 +27,7 @@ const ProjectArray = [
             }
         ],
         responsiveGalery: ['/onebitG.jpg', '/onebitM.jpg', '/onebitP.jpg'],
-        galery: ['onebit01','onebit02','onebit03','onebit04'],
+        galery: ['onebit01.jpg','onebit02.jpg','onebit03.jpg','onebit04.jpg','onebit05.jpg'],
         bg:'onebitBG.jpg'
     },
     {
