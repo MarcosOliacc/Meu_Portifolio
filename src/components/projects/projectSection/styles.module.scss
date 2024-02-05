@@ -238,8 +238,12 @@
             color: black;
         }
     }
+    .tecnosContent {
+        display: flex;
+        justify-content: center;
+    }
 }
-@media (max-width: 440px) {
+@media (max-width: 450px) {
     .telaG {
         top: 30%;
         left: 50%;
