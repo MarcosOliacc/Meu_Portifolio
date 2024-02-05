@@ -3,7 +3,7 @@
 .conteiner {
     position: relative;
     height: 100%;
-    overflow: hidden;
+    
 }
 .projectConteiner {
     display: grid;
@@ -219,6 +219,9 @@
     }
     .projectBackground {
         width: 100%;
+    }
+    .conteiner {
+        overflow: hidden;
     }
 }
 
