@@ -35,7 +35,7 @@ export function Header() {
                 
                 className={styles.circuits}></motion.div> 
             </div>
-            <div ref={ref} className={styles.header}>      
+            <div className={styles.header}>      
                 <motion.h1
                 variants={{
                     hidden:{opacity: 0},
@@ -47,7 +47,7 @@ export function Header() {
                         duration: 2, delay:0.7
                     }}
                 >Projetos Pessoais e Acadêmicos</motion.h1>
-                <nav className={styles.navContent}>
+                <nav  ref={ref} className={styles.navContent}>
                     <motion.button
                     variants={{
                     hidden:{opacity: 0, x: 100},

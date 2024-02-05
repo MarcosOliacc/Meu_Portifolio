@@ -43,7 +43,6 @@
 .tecnosContent {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .tecnos {
     display: flex;
@@ -238,5 +237,34 @@
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
             color: black;
         }
+    }
+}
+@media (max-width: 440px) {
+    .telaG {
+        top: 30%;
+        left: 50%;
+    }
+    .backG {
+        top: 30%;
+        left: 50%;
+    }
+    .telaM {
+        top: 60%;
+        left: 60%;
+
+    }
+    .backM {
+        top: 60%;
+        left: 60%;
+
+    }
+    .telaP {
+        top: 60%;
+        left: -20%;
+    }
+    .backP {
+        top: 60%;
+        left: -20%;
+
     }
 }
