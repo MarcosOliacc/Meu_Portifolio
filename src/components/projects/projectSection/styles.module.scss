@@ -221,6 +221,16 @@
         width: 100%;
     }
 }
+
+@media (max-width: 900px) {
+    .projectImgsContent {
+        min-width: 230px;
+    }
+    .galeryBtn {
+        display: none;
+    }
+
+}
 @media (max-width: 660px) {
     .projectInfosContent {
         h1 {
