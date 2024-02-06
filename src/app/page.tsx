@@ -1,12 +1,9 @@
-import Image from "next/image";
 import styles from '@/styles/home.module.scss'
-import { Open_Sans } from "next/font/google";
 import { Header } from "@/components/common/header";
 import { VisitCart } from "@/components/visitCard";
 import { AboutMe } from "@/components/aboutMe";
-import { Projects } from "@/components/projects/projectSection";
-import { ProjectProvider } from "@/context/ProjectContext";
 import { ProjectContent } from "@/components/projects/projectContent";
+import { CareerSection } from '@/components/career/careerSection';
 
 export default function Home() {
   return (<>
@@ -22,6 +19,9 @@ export default function Home() {
       </section>
       <section id="projects" className={styles.section}>
         <ProjectContent/>
+      </section>
+      <section id="projects" className={styles.section}>
+        <CareerSection/>
       </section>
     </main>
   </>)

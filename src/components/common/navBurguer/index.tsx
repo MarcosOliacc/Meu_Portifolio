@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect,useRef } from "react"
+import { useState, useEffect } from "react"
 import styles from './styles.module.scss'
 import Image from "next/image"
 
@@ -7,8 +7,6 @@ export function NavBurguer() {
     const [burguerClass, setBurguerClass] = useState(styles.closed)
     const [menuClass, setMenuClass] = useState(styles.hidden)
     const [burguer, setBurguer] = useState(true)
-
-
 
     useEffect(()=>{
         if(burguer === false) {

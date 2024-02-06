@@ -1,0 +1,180 @@
+@import '@/styles/variables.module.scss';
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.careerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.timelineContent {
+    width: 3px;
+    background-color: $bluestone;
+    position: relative;
+}
+.points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $richblack;
+    width: 70px;
+    height: 60px;
+    border: 3px solid $bluestone;
+    border-radius: 50%;
+    z-index: 5;
+
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    p {
+       font-size: 1.5rem; 
+       text-align: center;
+    }
+}
+.firstPoint {
+    @extend .points;
+
+}
+.point2 {
+    @extend .points;
+    top: 170px;
+    width: 20px;
+    height: 20px;
+}
+.point3 {
+    @extend .points;
+    top: 370px;
+    width: 20px;
+    height: 20px;
+}
+.lastPoint {
+    @extend .points;
+    top: 100%;
+    width: 20px;
+    height: 20px;
+}
+// ------------- cards styles ------------ //
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    .lines {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: lines;
+        .line1 {
+            width: 30px;
+            height: 30px;
+            border-top: 3px solid $bluestone;
+            border-right: 3px solid $bluestone;
+        }
+        .line2 {
+            width: 50px;
+            height: 30px;
+            border-bottom: 3px solid $bluestone;
+        }
+        .line3 {
+            width: 50px;
+            height: 30px;
+            border-bottom: 3px solid $bluestone;
+            border-right: 3px solid $bluestone;
+        }
+        .line4 {
+            width: 30px;
+            height: 30px;
+            border-top: 3px solid $bluestone;
+        }
+        .line5 {
+            width: 50px;
+            height: 30px;
+            border-top: 3px solid $bluestone;
+        }
+        .line6 {
+            width: 60px;
+            height: 30px;
+            border-bottom: 3px solid $bluestone;
+            border-left: 3px solid $bluestone;
+            border-right: 3px solid $bluestone;
+        }
+        .line7 {
+            width: 30px;
+            height: 30px;
+            border-top: 3px solid $bluestone;
+        }
+        .line8 {
+            width: 30px;
+            height: 30px;
+            border-bottom: 3px solid $bluestone;
+        }
+        .line9 {
+            width: 60px;
+            height: 30px;
+            border-top: 3px solid $bluestone;
+            border-left: 3px solid $bluestone;
+            border-right: 3px solid $bluestone;
+        }
+        .line10 {
+            width: 60px;
+            height: 30px;
+            border-bottom: 3px solid $bluestone;
+        }
+    }
+
+}
+.cardTextContent {
+        grid-area: textContent;
+        border: 3px solid $bluestone;
+        width: 400px;
+        padding: 10px;
+        border-radius: 0px 20px 0px 20px; 
+        p {
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    }
+.card1 {
+    @extend .cards;
+    top: 70px;
+    grid-template-areas:'lines textContent';
+}
+.textContent1 {
+    @extend .cardTextContent;
+}
+.card2 {
+    @extend .cards;
+    top: 20px;
+    right: 100%;
+    grid-template-areas:'textContent lines';
+}
+.textContent2 {
+    @extend .cardTextContent; 
+}
+.card3 {
+    @extend .cards;
+    top: 260px;
+    grid-template-areas:'lines textContent';
+}
+.textContent3 {
+    @extend .cardTextContent;
+}
+.card4 {
+    @extend .cards;
+    top: 180px;
+    right: 100%;
+    grid-template-areas:'textContent lines';
+}
+.textContent4 {
+    @extend .cardTextContent;
+       
+}
