@@ -54,6 +54,9 @@
 .hidden {
     display: none;
 }
+.visible {
+    display: flex;
+}
 .opened {
     .bar1 {
         top: 50%;

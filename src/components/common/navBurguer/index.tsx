@@ -4,25 +4,25 @@ import styles from './styles.module.scss'
 import Image from "next/image"
 
 export function NavBurguer() {
-    const ref1 = useRef(null)
     const [burguerClass, setBurguerClass] = useState(styles.closed)
     const [menuClass, setMenuClass] = useState(styles.hidden)
-    const [burguer, setBurguer] = useState(false)
+    const [burguer, setBurguer] = useState(true)
 
-    function changeMenu() {
+
+
+    useEffect(()=>{
         if(burguer === false) {
-            setBurguer(true)
             setMenuClass(styles.visible)
             setBurguerClass(styles.opened)
         } else {
-            setBurguer(false)
             setMenuClass(styles.hidden)
             setBurguerClass(styles.closed)
         } 
-    }
+    },[burguer])
+
     return <>
         <div className={styles.conteiner}>
-            <div ref={ref1} className={`${styles.acessContent} ${menuClass}`}>
+            <div className={`${styles.acessContent} ${menuClass}`}> 
                 <button className={styles.acessBtn}>
                     <a href="#aboutMe">
                         Sobre mim
@@ -48,7 +48,7 @@ export function NavBurguer() {
                     </a>
                 </button>
             </div>
-            <div className={`${styles.barsContent} ${burguerClass}`} onClick={()=>changeMenu()}>
+            <div className={`${styles.barsContent} ${burguerClass}`} onClick={()=>{setBurguer((state)=>!state)}}>
                 <div className={`${styles.bar1} ${styles.bars}`}></div>
                 <div className={`${styles.bar2} ${styles.bars}`}></div>
                 <div className={`${styles.bar3} ${styles.bars}`}></div>
