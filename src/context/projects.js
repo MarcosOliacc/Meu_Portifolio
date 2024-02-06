@@ -52,7 +52,7 @@ const ProjectArray = [
 
         ],
         responsiveGalery: ['/rangeG.jpg', '/rangeM.jpg', '/rangeP.jpg'],
-        galery: ['range01','range02','range03','range04'],
+        galery: ['range01.jpg','range02.jpg','range03.jpg','range04.jpg','range05.jpg'],
         bg:'rangeBG.jpg'
     },
     {
@@ -70,7 +70,7 @@ const ProjectArray = [
             }
         ],
         responsiveGalery: ['/frescoG.jpg', '/frescoM.jpg', '/frescoP.jpg'],
-        galery: ['fresco01','fresco02','fresco03','fresco04'],
+        galery: ['fresco01.jpg','fresco02.jpg','fresco03.jpg','fresco04.jpg','fresco05.jpg'],
         bg:'frescoBG.jpg'
     },
     {
