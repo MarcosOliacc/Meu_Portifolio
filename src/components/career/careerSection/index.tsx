@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client'
+import Image from 'next/image'
 import { Header } from '../header'
 import styles from './styles.module.scss'
 import { useEffect, useState, useRef } from 'react'
@@ -70,6 +71,8 @@ export function CareerSection() {
                     'Hoje me encontro focando ao máximo para realizar meu sonho de me tornar um programador, descobrindo e aprendendo cada vez mais.'
                     :'Esta é a minha linha do tempo de carreira, tenho fé que um dia a oportunidade virá e as linhas serão preenchidas. Sinta-se a vontade para ver minha jornada acadêmica.'
                     }</p>
+
+                    <Image className={styles.arrow} alt='' src='/arrowLeft.svg' width={30} height={30}/>
                     <a href="#career">
                     <button onClick={()=>setLines((st)=>!st)}>{timeline? 'Carreira':'Acadêmico'}</button>
                     </a>

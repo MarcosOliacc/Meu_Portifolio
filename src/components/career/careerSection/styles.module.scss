@@ -246,7 +246,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     p {
         text-align: justify;
         font-size: 1.8rem;
@@ -254,6 +254,10 @@
     button {
         width: 150px;
         padding: 5px;
+    }
+    .arrow {
+        rotate: -90deg;
+        filter: invert(100%);
     }
 }
 @media (max-width:1400px) {

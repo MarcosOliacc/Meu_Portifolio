@@ -23,7 +23,7 @@ export function TimelineAcademic() {
             break
             case 1: setDate2('Julho 2023'); setTopDate2('230px')
             break
-            case 2: setDate2('Outubro 2023'); setTopDate2('400px')
+            case 2: setDate2('Outubro 2023'); setTopDate2('470px')
             break
         }
 
