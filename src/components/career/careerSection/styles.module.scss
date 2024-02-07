@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
     gap: 20px;
     position: relative;
     overflow: hidden;
@@ -18,13 +19,32 @@
     background-color: $bluestone;
     position: relative;
 }
+.datePoint {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $richblack;
+    border: 3px solid $bluestone;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 8;
+    p {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
 .points {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $richblack;
-    width: 70px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border: 3px solid $bluestone;
     border-radius: 50%;
     z-index: 5;
@@ -34,7 +54,7 @@
     right: 50%;
     transform: translateX(50%);
     p {
-       font-size: 1.5rem; 
+       font-size: 1rem; 
        text-align: center;
     }
 }
@@ -44,13 +64,13 @@
 }
 .point2 {
     @extend .points;
-    top: 170px;
+    top: 200px;
     width: 20px;
     height: 20px;
 }
 .point3 {
     @extend .points;
-    top: 370px;
+    top: 400px;
     width: 20px;
     height: 20px;
 }
@@ -138,6 +158,7 @@
         width: 400px;
         padding: 10px;
         border-radius: 0px 20px 0px 20px; 
+        
         p {
             font-size: 1.5rem;
             text-align: justify;
@@ -145,7 +166,7 @@
     }
 .card1 {
     @extend .cards;
-    top: 70px;
+    top: 90px;
     grid-template-areas:'lines textContent';
 }
 .textContent1 {
@@ -153,7 +174,7 @@
 }
 .card2 {
     @extend .cards;
-    top: 20px;
+    top: 40px;
     right: 100%;
     grid-template-areas:'textContent lines';
 }
@@ -162,7 +183,7 @@
 }
 .card3 {
     @extend .cards;
-    top: 260px;
+    top: 290px;
     grid-template-areas:'lines textContent';
 }
 .textContent3 {
@@ -170,11 +191,64 @@
 }
 .card4 {
     @extend .cards;
-    top: 180px;
+    top: 250px;
     right: 100%;
     grid-template-areas:'textContent lines';
 }
 .textContent4 {
     @extend .cardTextContent;
        
+}
+.card5 {
+    @extend .cards;
+    top: 410px;
+    grid-template-areas:'lines textContent';
+}
+.textContent5 {
+    @extend .cardTextContent;
+    margin-top: 40px;
+}
+.card6 {
+    @extend .cards;
+    top: 480px;
+    right: 100%;
+    grid-template-areas:'textContent lines';
+}
+.textContent6 {
+    @extend .cardTextContent;
+       
+}
+.card7 {
+    @extend .cards;
+    top:630px;
+    grid-template-areas:'lines textContent';
+}
+.textContent7 {
+    @extend .cardTextContent;
+}
+.card8 {
+    @extend .cards;
+    top: 680px;
+    right: 100%;
+    grid-template-areas:'textContent lines';
+}
+.textContent8 {
+    @extend .cardTextContent;
+       
+}
+.finalContent {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    p {
+        text-align: justify;
+        font-size: 1.8rem;
+    }
+    button {
+        width: 150px;
+        padding: 5px;
+    }
 }

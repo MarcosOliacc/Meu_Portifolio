@@ -4,6 +4,7 @@ import { Header } from '../header'
 import styles from './styles.module.scss'
 import { useEffect, useState, useRef } from 'react'
 import { useAnimation, useInView, motion } from 'framer-motion';
+import { Timeline } from '../timeline';
 
 export function CareerSection() {
     const ref = useRef(null)
@@ -24,7 +25,7 @@ export function CareerSection() {
             setLineHeight('200px')
             setTimeline(0)
             } else {
-                setLineHeight('800px')
+                setLineHeight('900px')
                 setTimeline(1)
             }
             mainControls.start('visible') 
@@ -60,74 +61,19 @@ export function CareerSection() {
                     }}
                 style={{height:lineHeight}}
                 className={styles.timelineContent}>
-                    {timeline? <>
-                        <div className={styles.card1}>
-                            <div className={styles.lines}>
-                                <div className={styles.line1}></div>
-                                <div className={styles.line2}></div>
-                            </div>
-                            <div className={styles.textContent1}>
-                                <p className={styles.cardText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero debitis quam vitae accusamus unde nesciunt fugiat. Expedita iste dolorem laborum architecto maxime! Obcaecati harum eligendi ducimus et omnis corrupti quibusdam.</p>
-                            </div>
-                        </div>
-
-                        <div className={styles.point2}></div>
-
-                        <div className={styles.card2}>
-                            <div className={styles.lines}>
-                                <div className={styles.line3}></div>
-                                <div className={styles.line4}></div>
-                            </div>
-                            <div className={styles.textContent2}>
-                                <p className={styles.cardText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero debitis quam vitae accusamus unde nesciunt fugiat. Expedita iste dolorem laborum architecto maxime! Obcaecati harum eligendi ducimus et omnis corrupti quibusdam.</p>
-                            </div>
-                        </div>
-                        <div className={styles.card2}>
-                            <div className={styles.lines}>
-                                <div className={styles.line3}></div>
-                                <div className={styles.line4}></div>
-                            </div>
-                            <div className={styles.textContent2}>
-                                <p className={styles.cardText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero debitis quam vitae accusamus unde nesciunt fugiat. Expedita iste dolorem laborum architecto maxime! Obcaecati harum eligendi ducimus et omnis corrupti quibusdam.</p>
-                            </div>
-                        </div>
-                        <div className={styles.card3}>
-                            <div className={styles.lines}>
-                                <div className={styles.line8}></div>
-                                <div className={styles.line9}></div>
-                                <div className={styles.line10}></div>
-                            </div>
-                            <div className={styles.textContent3}>
-                                <p className={styles.cardText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero debitis quam vitae accusamus unde nesciunt fugiat. Expedita iste dolorem laborum architecto maxime! Obcaecati harum eligendi ducimus et omnis corrupti quibusdam.</p>
-                            </div>
-                        </div>
-                        <div className={styles.card4}>
-                            <div className={styles.lines}>
-                                <div className={styles.line5}></div>
-                                <div className={styles.line6}></div>
-                                <div className={styles.line7}></div>
-                            </div>
-                            <div className={styles.textContent4}>
-                                <p className={styles.cardText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero debitis quam vitae accusamus unde nesciunt fugiat. Expedita iste dolorem laborum architecto maxime! Obcaecati harum eligendi ducimus et omnis corrupti quibusdam.</p>
-                            </div>
-                        </div>
-
-                        <div className={styles.point3}></div>
-                        
-
-
-
-
-
-            
-
-
-
-
-                    </>:''}
+                    {timeline?<Timeline/>:''}
                     <div className={styles.lastPoint}></div>
                 </motion.div>
-                <p onClick={()=>setLines((st)=>!st)}>alo</p>
+                <div className={styles.finalContent}>
+                    <p>{timeline?
+                    'Hoje me encontro focando ao máximo para realizar meu sonho de me tornar um programador, descobrindo e aprendendo cada vez mais.'
+                    :'Esta é a minha linha do tempo de carreira, no momento ela está vazia, mas tenho fé que um dia a oportunidade virá e as linhas serão preenchidas. Sinta-se a vontade para ver minha jornada acadêmica.'
+                    }</p>
+                    <a href="#career">
+                    <button onClick={()=>setLines((st)=>!st)}>{timeline? 'Carreira':'Acadêmico'}</button>
+                    </a>
+                </div>
+                
             </div>
         </motion.div>
     </>

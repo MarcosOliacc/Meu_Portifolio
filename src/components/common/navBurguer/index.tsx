@@ -34,7 +34,7 @@ export function NavBurguer() {
                     </a>
                 </button>
                 <button className={styles.acessBtn}>
-                    <a href="#">
+                    <a href="#career">
                         Carreira
                     <Image src='/arrowsWLink.png' alt='' width={25} height={25} className={styles.arrows}/>
                     </a>

@@ -42,7 +42,7 @@ export function NavPage() {
                 duration: 0.3, delay: 0.7
             }}
         className={styles.acessBtn}>
-            <a href="#">Carreira <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/></a>
+            <a href="#career">Carreira <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/></a>
         </motion.button>
         <motion.button
         variants={{

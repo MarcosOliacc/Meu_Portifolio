@@ -20,7 +20,7 @@ export default function Home() {
       <section id="projects" className={styles.section}>
         <ProjectContent/>
       </section>
-      <section id="projects" className={styles.section}>
+      <section id="career" className={styles.section}>
         <CareerSection/>
       </section>
     </main>

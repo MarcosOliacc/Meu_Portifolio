@@ -20,7 +20,7 @@ export function Header() {
                     </a>
                 </button>
                 <button className={styles.acessBtn}>
-                    <a href="#">
+                    <a href="#career">
                         Carreira
                     <Image src='/arrowsLink.png' alt='' width={19} height={19} className={styles.arrows}/>
                     </a>
