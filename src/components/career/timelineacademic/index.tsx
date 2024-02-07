@@ -21,9 +21,9 @@ export function TimelineAcademic() {
         switch(point2) {
             case 0: setDate2(''); setTopDate2('0')
             break
-            case 1: setDate('Julho 2023'); setTopDate2('180px')
+            case 1: setDate2('Julho 2023'); setTopDate2('230px')
             break
-            case 2: setDate('Outubro 2023'); setTopDate2('380px')
+            case 2: setDate2('Outubro 2023'); setTopDate2('400px')
             break
         }
 
@@ -37,7 +37,7 @@ export function TimelineAcademic() {
     className={styles.datePoint}><p>{date}</p></div>:''}
     {point2?<div
     style={{
-        top: topDate
+        top: topDate2
     }}
     onMouseEnter={()=>setPoint2(point2)} onMouseLeave={()=>setPoint2(0)}
     className={styles.datePoint}><p>{date2}</p></div>:''}
@@ -61,7 +61,7 @@ export function TimelineAcademic() {
     </div>
 
     <div onMouseEnter={()=>setPoint(1)} onMouseLeave={()=>setPoint(0)} className={styles.point2}></div>
-    <div onMouseEnter={()=>setPoint(1)} onMouseLeave={()=>setPoint(0)} className={styles.point22}></div>
+    <div onMouseEnter={()=>setPoint2(1)} onMouseLeave={()=>setPoint2(0)} className={styles.point22}></div>
 
     <div className={styles.card3}>
         <div className={styles.lines}>
@@ -85,7 +85,7 @@ export function TimelineAcademic() {
     </div>
 
     <div onMouseEnter={()=>setPoint(2)} onMouseLeave={()=>setPoint(0)} className={styles.point3}></div>
-    <div onMouseEnter={()=>setPoint(2)} onMouseLeave={()=>setPoint(0)} className={styles.point33}></div>
+    <div onMouseEnter={()=>setPoint2(2)} onMouseLeave={()=>setPoint2(0)} className={styles.point33}></div>
     
     <div className={styles.card5}>
         <div className={styles.lines}>

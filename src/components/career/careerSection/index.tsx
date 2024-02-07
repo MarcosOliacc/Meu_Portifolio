@@ -68,7 +68,7 @@ export function CareerSection() {
                 <div className={styles.finalContent}>
                     <p>{timeline?
                     'Hoje me encontro focando ao máximo para realizar meu sonho de me tornar um programador, descobrindo e aprendendo cada vez mais.'
-                    :'Esta é a minha linha do tempo de carreira, no momento ela está vazia, mas tenho fé que um dia a oportunidade virá e as linhas serão preenchidas. Sinta-se a vontade para ver minha jornada acadêmica.'
+                    :'Esta é a minha linha do tempo de carreira, tenho fé que um dia a oportunidade virá e as linhas serão preenchidas. Sinta-se a vontade para ver minha jornada acadêmica.'
                     }</p>
                     <a href="#career">
                     <button onClick={()=>setLines((st)=>!st)}>{timeline? 'Carreira':'Acadêmico'}</button>
