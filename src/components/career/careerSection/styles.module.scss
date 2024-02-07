@@ -48,6 +48,7 @@
     border: 3px solid $bluestone;
     border-radius: 50%;
     z-index: 5;
+    
 
     position: absolute;
     top: 0;
@@ -74,6 +75,10 @@
     width: 20px;
     height: 20px;
 }
+.point22, .point33 {
+    @extend .points;
+    display: none
+}
 .lastPoint {
     @extend .points;
     top: 100%;
@@ -87,7 +92,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    
     .lines {
         display: flex;
         justify-content: center;
@@ -250,5 +254,140 @@
     button {
         width: 150px;
         padding: 5px;
+    }
+}
+@media (max-width:1400px) {
+    .cardTextContent {
+        max-width: 25vw;
+    }
+    .card3 {
+        top: 280px;
+        grid-template-areas:'lines textContent';
+    }
+}
+@media (max-width:1100px) {
+    .finalContent {
+        padding-top: 50px;
+    }
+    .point22 {
+        top: 250px;
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+    .point33 {
+        top: 490px;
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+    .point2, .point3 {
+        display: none;
+    }
+    .careerContent {
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .cardTextContent {
+        max-width: 400px;
+    }
+    .firstPoint {
+        left: -18px;
+    }
+    .card1 {
+        top: 120px;
+        grid-template-areas:'lines textContent';
+    }
+    .card2 {
+        top: -10px;
+        right: 50%;
+        transform: translateX(100%);
+        grid-template-areas:'lines textContent';
+    }
+    .card3 {
+        top: 400px;
+        grid-template-areas:'lines textContent';
+    }
+    .card4 {
+        top: 270px;
+        right: 50%;
+        transform: translateX(100%);
+        grid-template-areas:'lines textContent';
+    }
+    .card5 {
+        top: 485px;
+        grid-template-areas:'lines textContent';
+    }
+    .card6 {
+        top: 645px;
+        right: 50%;
+        transform: translateX(100%);
+        grid-template-areas:'lines textContent ';
+    }
+    .card7 {
+        top:770px;
+        grid-template-areas:'lines textContent';
+    }
+    .card8 {
+        top: 910px;
+        right: 50%;
+        transform: translateX(100%);
+        grid-template-areas:'lines textContent';
+    } 
+    
+}
+@media (max-width:640px) {
+    .cardTextContent {
+        max-width: 55vw;
+        p {
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+    }
+}
+@media (max-width:480px) {
+    .cardTextContent {
+        max-width: 70vw;
+    }
+    .cards{
+        .lines {
+            .line1 {
+                display: none;
+            }
+            .line2 {
+                width: 30px;
+                height: 30px;
+                border-bottom: 3px solid $bluestone;
+            }
+            .line3 {
+                display: none;
+            }
+            .line5 {
+                display: none;
+            }
+            .line6 {
+                width: 15px;
+                height: 30px;
+                border-bottom: 3px solid $bluestone;
+                border-left: none;
+                border-right: 3px solid $bluestone;
+            }
+            .line8 {
+                display: none;
+            }
+            .line9 {
+                width: 15px;
+                height: 30px;
+                border-top: 3px solid $bluestone;
+                border-left: none;
+                border-right: 3px solid $bluestone;
+            }
+            .line10 {
+                width: 30px;
+                height: 30px;
+                border-bottom: 3px solid $bluestone;
+            }
+        }
+    
     }
 }

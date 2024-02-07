@@ -4,7 +4,7 @@ import { Header } from '../header'
 import styles from './styles.module.scss'
 import { useEffect, useState, useRef } from 'react'
 import { useAnimation, useInView, motion } from 'framer-motion';
-import { Timeline } from '../timeline';
+import { TimelineAcademic } from '../timelineacademic';
 
 export function CareerSection() {
     const ref = useRef(null)
@@ -14,7 +14,7 @@ export function CareerSection() {
     const [timeline, setTimeline] = useState(0)
     const [lines, setLines] = useState(false)
     const [lineHeight, setLineHeight] = useState('200px')
-
+    
     useEffect(()=>{
         if(isInview) {
             setTimeout(()=>{mainControls.start('visible')},1000)
@@ -25,8 +25,9 @@ export function CareerSection() {
             setLineHeight('200px')
             setTimeline(0)
             } else {
-                setLineHeight('900px')
                 setTimeline(1)
+                setLineHeight('1000px')
+                
             }
             mainControls.start('visible') 
         },800)
@@ -51,17 +52,17 @@ export function CareerSection() {
                 <div className={styles.firstPoint}><p>Jane 2023</p></div>
                 <motion.div
                 variants={{
-                    hidden:{y: Number(`-${lineHeight.split('').slice(0,3).join('')}`)*5},
+                    hidden:{y: Number(`-${lineHeight.split('').slice(0,3).join('')}`)*30},
                     visible: {y:0}
                     }}
                     initial= 'hidden'
                     animate= {mainControls}
                     transition={{
-                        duration: 0.8, delay: 0.2
+                        duration: 2, delay: 0.2
                     }}
-                style={{height:lineHeight}}
+                style={{height: lineHeight}}
                 className={styles.timelineContent}>
-                    {timeline?<Timeline/>:''}
+                    {timeline?<TimelineAcademic/>:''}
                     <div className={styles.lastPoint}></div>
                 </motion.div>
                 <div className={styles.finalContent}>

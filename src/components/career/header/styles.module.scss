@@ -27,3 +27,29 @@
     margin-top: 40px;
     z-index: 5;
 }
+@media (max-width:640px) {
+    .conteiner {
+        height: 150px;
+    }
+    .bgContent {
+        background-image: radial-gradient(transparent,#060C0F 75%);
+    }
+
+    .title {
+        font-size: 3rem;
+        margin-top: 40px;
+        z-index: 5;
+    }
+}
+@media (max-width:490px) {
+
+    .bgContent {
+        background-image: radial-gradient(transparent,#060C0F 75%);
+    }
+
+    .title {
+        font-size: 2.4rem;
+        margin-top: 40px;
+        z-index: 5;
+    }
+}

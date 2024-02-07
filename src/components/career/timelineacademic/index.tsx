@@ -2,10 +2,13 @@
 import styles from '../careerSection/styles.module.scss'
 import { useEffect, useState, useRef } from 'react'
 
-export function Timeline() {
+export function TimelineAcademic() {
     const [point, setPoint] = useState(0)
+    const [point2, setPoint2] = useState(0)
     const [date, setDate] = useState('')
+    const [date2, setDate2] = useState('')
     const [topDate, setTopDate] = useState('0')
+    const [topDate2, setTopDate2] = useState('0')
     useEffect(()=>{
         switch(point) {
             case 0: setDate(''); setTopDate('0')
@@ -15,8 +18,16 @@ export function Timeline() {
             case 2: setDate('Outubro 2023'); setTopDate('380px')
             break
         }
+        switch(point2) {
+            case 0: setDate2(''); setTopDate2('0')
+            break
+            case 1: setDate('Julho 2023'); setTopDate2('180px')
+            break
+            case 2: setDate('Outubro 2023'); setTopDate2('380px')
+            break
+        }
 
-    },[point])
+    },[point,point2])
     return <>
     {point?<div
     style={{
@@ -24,6 +35,12 @@ export function Timeline() {
     }}
     onMouseEnter={()=>setPoint(point)} onMouseLeave={()=>setPoint(0)}
     className={styles.datePoint}><p>{date}</p></div>:''}
+    {point2?<div
+    style={{
+        top: topDate
+    }}
+    onMouseEnter={()=>setPoint2(point2)} onMouseLeave={()=>setPoint2(0)}
+    className={styles.datePoint}><p>{date2}</p></div>:''}
     <div className={styles.card1}>
         <div className={styles.lines}>
             <div className={styles.line1}></div>
@@ -44,6 +61,7 @@ export function Timeline() {
     </div>
 
     <div onMouseEnter={()=>setPoint(1)} onMouseLeave={()=>setPoint(0)} className={styles.point2}></div>
+    <div onMouseEnter={()=>setPoint(1)} onMouseLeave={()=>setPoint(0)} className={styles.point22}></div>
 
     <div className={styles.card3}>
         <div className={styles.lines}>
@@ -67,6 +85,7 @@ export function Timeline() {
     </div>
 
     <div onMouseEnter={()=>setPoint(2)} onMouseLeave={()=>setPoint(0)} className={styles.point3}></div>
+    <div onMouseEnter={()=>setPoint(2)} onMouseLeave={()=>setPoint(0)} className={styles.point33}></div>
     
     <div className={styles.card5}>
         <div className={styles.lines}>
