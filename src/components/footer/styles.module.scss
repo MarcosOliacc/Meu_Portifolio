@@ -1,0 +1,61 @@
+@import '@/styles/variables.module.scss';
+
+.conteiner {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footerContent {
+    height: 100%;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+.socialContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 2rem;
+    }
+}
+.arrows {
+    margin-bottom: -3px;
+    margin-left: 5px;
+    transition: 300ms;
+}
+.acessContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        font-size: 2rem;
+        &:hover {
+            .arrows {
+                rotate: -45deg;
+            }
+        }
+    }
+}
+
+.copy{
+    width: 100%;
+    background-color: $bluestone;
+    h3 {
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
