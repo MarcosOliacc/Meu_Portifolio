@@ -60,11 +60,12 @@ export function ContactSection() {
                     onChange={handleChange}
                     />
                     <label htmlFor="phone">Telefone</label>
-                    <input type="text" 
+                    <input type="number" 
                     id='phone' name='phone'
                     placeholder='(99) 98989-8999'
                     value={contact.phone}
                     onChange={handleChange}
+                    maxLength={11}
                     />
                     <label htmlFor="message">Mensagem</label>
                     <textarea name="message" id="message" cols={50} rows={10}

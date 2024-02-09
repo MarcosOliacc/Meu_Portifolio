@@ -94,7 +94,7 @@ const ProjectArray = [
             }
         ],
         responsiveGalery: ['/portiG.jpg', '/portiM.jpg', '/portiP.jpg'],
-        galery: ['porti01','porti02','porti03','porti04'],
+        galery: ['portif01.jpg','portif02.jpg','portif03.jpg','portif04.jpg','portif05.jpg'],
         bg:'Hexagon.svg'
     },
 
