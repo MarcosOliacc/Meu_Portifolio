@@ -4,6 +4,7 @@ import { VisitCart } from "@/components/visitCard";
 import { AboutMe } from "@/components/aboutMe";
 import { ProjectContent } from "@/components/projects/projectContent";
 import { CareerSection } from '@/components/career/careerSection';
+import { ContactSection } from '@/components/contact/contactSection';
 
 export default function Home() {
   return (<>
@@ -22,6 +23,9 @@ export default function Home() {
       </section>
       <section id="career" className={styles.section}>
         <CareerSection/>
+      </section>
+      <section id="contact" className={styles.section}>
+        <ContactSection/>
       </section>
     </main>
   </>)

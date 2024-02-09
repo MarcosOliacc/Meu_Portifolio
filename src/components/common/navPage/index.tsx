@@ -55,7 +55,7 @@ export function NavPage() {
             duration: 0.3, delay: 0.8
         }}
         className={styles.acessBtn}>
-            <a href="#">Contato <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/></a>
+            <a href="#contact">Contato <Image src='/arrowsLink.png' alt='' width={25} height={25} className={styles.arrows}/></a>
         </motion.button>
     </div>
     </>
