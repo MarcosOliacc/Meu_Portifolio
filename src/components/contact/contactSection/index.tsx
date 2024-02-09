@@ -51,6 +51,7 @@ export function ContactSection() {
                     placeholder='Digite seu nome'
                     value={contact.name}
                     onChange={handleChange}
+                    required
                     />
                     <label htmlFor="email">Email</label>
                     <input type="email" 
@@ -58,6 +59,7 @@ export function ContactSection() {
                     placeholder='DigiteSeu@Email.com'
                     value={contact.email}
                     onChange={handleChange}
+                    required
                     />
                     <label htmlFor="phone">Telefone</label>
                     <input type="number" 
@@ -72,6 +74,7 @@ export function ContactSection() {
                     value={contact.message}
                     placeholder='Digite sua mensagem'
                     onChange={handleChange}
+                    required
                     ></textarea>
                     <button type='submit'>Enviar Mensagem</button>
                 </form>
