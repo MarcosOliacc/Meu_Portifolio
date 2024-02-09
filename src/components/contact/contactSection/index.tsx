@@ -78,7 +78,7 @@ export function ContactSection() {
                 : 
                 <div className={styles.sendContent}>
                     <h2 className={response.type=== 'success'? styles.success: styles.error}>{response.type === 'success'? 'Mensagem enviada com sucesso!!':'Ops, parece que algo deu errado!'}</h2>
-                    <p>{response.type === 'success'? 'Obrigado pela sua menssagem :)':'Por favor, tente nos enviar sua menssagem novamente.'}</p>
+                    <p>{response.type === 'success'? 'Obrigado pela sua mensagem :)':'Por favor, tente nos enviar sua mensagem novamente.'}</p>
                     {response.type === 'Error'? <button onClick={()=>{
                         setResponse({
                             type:'',
